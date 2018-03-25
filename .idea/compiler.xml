@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-config" />
+        <module name="springboot-restfulapi" />
         <module name="springbootlearn" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
       <module name="springboot-config" target="1.8" />
+      <module name="springboot-restfulapi" target="1.8" />
       <module name="springbootlearn" target="1.5" />
     </bytecodeTargetLevel>
   </component>

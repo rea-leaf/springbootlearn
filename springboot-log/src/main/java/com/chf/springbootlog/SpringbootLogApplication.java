@@ -9,9 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbootLogApplication {
 	private static Logger log = Logger.getLogger(SpringbootLogApplication.class);
 	public static void main(String[] args) {
-		log.info(" log  info");
-		log.error(" log  error");
-		log.debug(" log  debug");
+		log.info(" -------------log  info");
+		log.error(" ---------------log  error");
+		log.debug(" --------------log  debug");
 		SpringApplication.run(SpringbootLogApplication.class, args);
 
 	}

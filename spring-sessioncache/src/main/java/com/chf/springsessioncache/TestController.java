@@ -24,6 +24,6 @@ public class TestController {
     @ApiOperation("test session")
     public  String test(HttpServletRequest request, HttpServletResponse response){
         String seeionid=request.getSession().getId();
-        return "seeionid:"+seeionid;
+        return "--AAA--seeionid:"+seeionid;
     }
 }

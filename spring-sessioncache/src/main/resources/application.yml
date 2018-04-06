@@ -11,6 +11,14 @@ spring:
   redis:
       host: 192.168.150.129
       port: 6379
+    # 热加载配置 不缓存资源文件
+  resources:
+    chain:
+      cache: false
+  #热部署生效
+  devtools:
+    restart:
+      enabled: true
 
 # log配置
 logging:

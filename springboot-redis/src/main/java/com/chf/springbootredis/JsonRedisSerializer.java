@@ -34,7 +34,7 @@ public class JsonRedisSerializer implements RedisSerializer<Object>{
             return EMPTY_ARRAY;
         }else{
             String jsonString =JSON.toJSONString(o);
-            return  JSON.toJSONBytes(jsonString.getBytes(DEFAULT_CHARSET));
+            return  JSON.toJSONBytes(o);
         }
     }
 
@@ -50,7 +50,7 @@ public class JsonRedisSerializer implements RedisSerializer<Object>{
         }
         try {
             objectStr = new String(bytes,DEFAULT_CHARSET);
-            object=   JSON.parse(objectStr);
+            object=   JSON.parseObject(objectStr);
 
         } catch (Exception e) {
             // TODO: handle exception

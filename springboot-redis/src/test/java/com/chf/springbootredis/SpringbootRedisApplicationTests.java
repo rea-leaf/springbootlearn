@@ -20,7 +20,10 @@ public class SpringbootRedisApplicationTests {
 		user.setAge(10);
 		user.setId(1);
 		user.setName("tom");
-		redisTemplate.opsForValue().set("test111",user);
+		redisTemplate.opsForValue().set("test",user.toString());
+		Object oo=redisTemplate.opsForValue().get("test");
+
+		System.out.println("-------："+oo.toString());
 	}
 
 }
